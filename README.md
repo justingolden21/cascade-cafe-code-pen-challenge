@@ -12,6 +12,14 @@ Development: `npm run local-dev`
 
 Production: `npm run build`
 
+### Tech
+
+Built with TailwindCSS, Hero Icons, and Zest Social Icons
+
+### TODO
+
+Maybe: scroll-to-top button
+
 ### Links
 
 -   Live demo: https://justingolden.me/cascade-cafe-code-pen-challenge/

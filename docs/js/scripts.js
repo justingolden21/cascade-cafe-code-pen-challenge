@@ -1,9 +1,11 @@
 window.onload = () => {
 	const weekday = new Date().getDay();
-	if (weekday == 0) document.getElementById('sun').classList.add('highlight');
-	else if (weekday == 5 || weekday == 6)
-		document.getElementById('fri-sat').classList.add('highlight');
-	else document.getElementById('mon-thurs').classList.add('highlight');
+	let weekname;
+	if (weekday == 0) weekname = 'sun';
+	else if (weekday == 5 || weekday == 6) weekname = 'fri-sat';
+	else weekname = 'mon-thurs';
+	document.getElementById(weekname).classList.add('highlight');
 
-	document.getElementById(window.location.hash.substring(1)).scrollIntoView();
+	const elm = window.location.hash.substring(1);
+	if (elm && elm.length) document.getElementById(elm).scrollIntoView();
 };

@@ -4,14 +4,14 @@
 
 @layer base {
 	::-moz-selection {
-		@apply bg-indigo-100;
+		@apply bg-gray-300;
 	}
 	::selection {
-		@apply bg-indigo-100;
+		@apply bg-gray-300;
 	}
 	*:focus,
 	button:focus {
-		@apply outline-none ring-2 ring-indigo-300;
+		@apply outline-none ring-2 ring-gray-300;
 	}
 	html {
 		scroll-behavior: smooth;
@@ -26,8 +26,22 @@
 		@apply text-4xl font-light tracking-wider;
 	}
 	a {
-		@apply block text-gray-500 my-2 hover:underline;
+		@apply text-gray-500 my-2 hover:underline;
 	}
+	section a {
+		@apply block;
+	}
+
+	nav {
+		@apply border-b-2 border-gray-500 py-2;
+	}
+	nav a {
+		@apply pr-4 my-2;
+	}
+	nav .social {
+		@apply hover:bg-gray-500 rounded-full float-right p-1 hover:text-white;
+	}
+
 	#hours {
 		@apply my-4 p-4 bg-gray-700 text-white text-left;
 	}
@@ -43,12 +57,13 @@
 	}
 
 	.header-div {
-		@apply mx-auto;
+		@apply mx-auto md:float-right;
 	}
 
+	nav,
 	.header-div,
 	.menu-section {
-		@apply p-4;
+		@apply m-4;
 	}
 	.menu-section {
 		/* @apply ; */
