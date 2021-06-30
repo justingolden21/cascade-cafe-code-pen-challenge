@@ -33,13 +33,10 @@
 	}
 
 	nav {
-		@apply border-b-2 border-gray-500 py-2;
-	}
-	nav a {
-		@apply pr-4 my-2;
+		@apply flex flex-col sm:flex-row items-center justify-between flex-wrap px-4 py-2 border-b-2 border-gray-500;
 	}
 	nav .social {
-		@apply hover:bg-gray-500 rounded-full float-right p-1 hover:text-white;
+		@apply hover:bg-gray-500 rounded-full p-1 hover:text-white mx-1;
 	}
 
 	#hours {
