@@ -32,6 +32,10 @@
 		@apply block;
 	}
 
+	.section-title {
+		@apply md:col-span-2 lg:col-span-3 text-center text-2xl tracking-wider font-light pt-4 border-t-2 border-gray-300;
+	}
+
 	nav {
 		@apply flex flex-col sm:flex-row items-center justify-between flex-wrap px-4 py-2 border-b-2 border-gray-500;
 	}
@@ -39,8 +43,14 @@
 		@apply hover:bg-gray-500 rounded-full p-1 hover:text-white mx-1;
 	}
 
+	.section {
+		@apply m-4;
+	}
+
+	/* hours */
+
 	#hours {
-		@apply my-4 p-4 bg-gray-700 text-white text-left;
+		@apply my-4 p-4 bg-gray-700 text-white text-left rounded;
 	}
 	#hours th {
 		@apply font-bold;
@@ -53,18 +63,8 @@
 		@apply bg-gray-500;
 	}
 
-	.header-div {
-		@apply mx-auto md:float-right;
-	}
+	/* menu */
 
-	nav,
-	.header-div,
-	.menu-section {
-		@apply m-4;
-	}
-	.menu-section {
-		/* @apply ; */
-	}
 	.menu-section-title {
 		@apply text-2xl font-light border-2 text-gray-500 border-gray-500 p-2 my-2 tracking-wider text-center;
 	}
@@ -76,6 +76,19 @@
 	}
 	.menu-desc {
 		@apply text-gray-700 leading-relaxed;
+	}
+
+	/* form */
+
+	input,
+	textarea {
+		@apply w-full bg-gray-50 bg-opacity-50 rounded border-2 border-gray-200 text-gray-700 py-1 px-2 leading-8;
+	}
+	label {
+		@apply leading-8 text-sm text-gray-700;
+	}
+	button {
+		@apply flex mx-auto text-white bg-gray-500 border-0 py-2 px-8 hover:bg-gray-700 rounded text-lg;
 	}
 }
 
