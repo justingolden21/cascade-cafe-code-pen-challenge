@@ -9,7 +9,8 @@
 	::selection {
 		@apply bg-indigo-100;
 	}
-	*:focus, button:focus {
+	*:focus,
+	button:focus {
 		@apply outline-none ring-2 ring-indigo-300;
 	}
 
@@ -25,17 +26,31 @@
 }
 
 @layer components {
-
+	.menu-section {
+		@apply p-16;
+	}
+	.menu-section-title {
+	}
+	.menu-prices {
+	}
+	.menu-item {
+	}
+	.menu-desc {
+	}
 }
 
-@media (min-width: 640px) { /* sm */
+@media (min-width: 640px) {
+	/* sm */
 }
 
-@media (min-width: 768px) { /* md */
+@media (min-width: 768px) {
+	/* md */
 }
 
-@media (min-width: 1024px) { /* lg */
+@media (min-width: 1024px) {
+	/* lg */
 }
 
-@media (min-width: 1280px) { /* xl */
+@media (min-width: 1280px) {
+	/* xl */
 }
