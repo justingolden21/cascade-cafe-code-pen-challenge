@@ -14,14 +14,14 @@ Production: `npm run build`
 
 ### Links
 
-- Live demo: https://justingolden.me/cascade-cafe
+-   Live demo: https://justingolden.me/cascade-cafe-code-pen-challenge/
 
-- This repo: https://github.com/justingolden21/cascade-cafe
+-   This repo: https://github.com/justingolden21/cascade-cafe
 
 <hr>
 
-- My website: https://justingolden.me
+-   My website: https://justingolden.me
 
-- My repos: https://github.com/justingolden21
+-   My repos: https://github.com/justingolden21
 
-- Contact me: contact@justingolden.me
+-   Contact me: contact@justingolden.me
