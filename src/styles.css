@@ -13,29 +13,57 @@
 	button:focus {
 		@apply outline-none ring-2 ring-indigo-300;
 	}
-
-	h1 {
-		@apply text-2xl font-light;
+	html {
+		scroll-behavior: smooth;
 	}
-	h2 {
-		@apply text-xl font-medium;
-	}
-	p {
-		@apply leading-relaxed;
+	body {
+		@apply m-4 text-gray-900 bg-gray-100;
 	}
 }
 
 @layer components {
+	#title {
+		@apply text-4xl font-light tracking-wider;
+	}
+	a {
+		@apply block text-gray-500 my-2 hover:underline;
+	}
+	#hours {
+		@apply my-4 p-4 bg-gray-700 text-white text-left;
+	}
+	#hours th {
+		@apply font-bold;
+	}
+	#hours th,
+	#hours td {
+		@apply px-2;
+	}
+	#hours tr.highlight {
+		@apply bg-gray-500;
+	}
+
+	.header-div {
+		@apply mx-auto;
+	}
+
+	.header-div,
 	.menu-section {
-		@apply p-16;
+		@apply p-4;
+	}
+	.menu-section {
+		/* @apply ; */
 	}
 	.menu-section-title {
+		@apply text-2xl font-light border-2 text-gray-500 border-gray-500 p-2 my-2 tracking-wider text-center;
 	}
 	.menu-prices {
+		@apply text-sm font-normal text-gray-500 mr-4;
 	}
 	.menu-item {
+		@apply bg-gray-700 text-white p-2 my-2;
 	}
 	.menu-desc {
+		@apply text-gray-700 leading-relaxed;
 	}
 }
 

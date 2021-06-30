@@ -13,52 +13,85 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="js/scripts.js"></script>
 </head>
-<body class="m-2 text-gray-900 bg-gray-100">
+<body>
 
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-2">
-        <div>
-            <img src="img/coffee-unsplash.jpg" alt="coffee" class="w-48">
+        <div class="header-div">
+            <img src="img/coffee-unsplash.jpg" alt="coffee" class="w-72 rounded-lg">
         </div>
-        <div class="lg:col-span-2">
-            <h1>Cascade Cafe</h1>
-            <p>123 Main Street · Smalltown, PA</p>
-            <p>412-555-0100</p>
+        <div class="header-div lg:col-span-2">
+            <h1 id="title">Cascade Cafe</h1>
+            <p><a href="https://www.google.com/maps/place/Pennsylvania" target="_blank">
+                <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+123 Main Street · Smalltown, PA
+            </a></p>
+            <p><a href="tel:412-555-0100" target="_blank">
+                <svg class="inline w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+412-555-0100
+            </a></p>
+            <table id="hours">
+                <tr>
+                    <td class="text-lg">HOURS</td>
+                </tr>
+                <tr id="mon-thurs">
+                    <th>Mon - Thurs</th>
+                    <td>6 a.m. - 9 p.m.</td>
+                </tr>
+                <tr id="fri-sat">
+                    <th>Fri - Sat</th>
+                    <td>6 a.m. - 11 p.m.</td>
+                </tr>
+                <tr id="sun">
+                    <th>Sun</th>
+                    <td>8 a.m. - 2 p.m.</td>
+                </tr>
+            </table>
         </div>
         <div class="menu-section">
-            <h2 class="menu-section-title">COFFEE</h2>
+            <h2 id="coffee" class="menu-section-title"><a href="#coffee">COFFEE</a></h2>
             <h4 class="menu-prices"><span>Small: $2</span> <span>Large: $4</span></h4>
             <h4 class="menu-item">HOUSE BLEND</h4>
             <p class="menu-desc">Smoky, strong, and assertive, just like us.</p>
+            <h4 class="menu-item">ORGANIC FRENCH ROAST</h4>
+            <p class="menu-desc">Smooth and mellow with hints of molasses.</p>
+            <h4 class="menu-item">ORGANIC DECAF</h4>
+            <p class="menu-desc">Full bodied and rich, we promise you won't miss the caffiene.</p>
         </div>
         <div class="menu-section">
-            <h2 class="menu-section-title">COFFEE</h2>
-            <h4 class="menu-prices"><span>Small: $2</span> <span>Large: $4</span></h4>
-            <h4 class="menu-item">HOUSE BLEND</h4>
-            <p class="menu-desc">Smoky, strong, and assertive, just like us.</p>
+            <h2 id="espresso" class="menu-section-title"><a href="#espresso">ESPRESSO DRINKS</a></h2>
+            <h4 class="menu-prices"><span>Small: $3</span> <span>Large: $5</span></h4>
+            <h4 class="menu-item">MACHIATTO</h4>
+            <p class="menu-desc">Espressso and steamed milk, served in a demitasse cup. (Size Small Only)</p>
+            <h4 class="menu-item">LATTE</h4>
+            <p class="menu-desc">Espresso with steamed milk, and sometimes a little art on top.</p>
+            <h4 class="menu-item">MOCHA</h4>
+            <p class="menu-desc">Espresso with steamed chocolate milk and whipped cream. Also available with white chocolate milk.</p>
+            <h4 class="menu-item">AMERICANO</h4>
+            <p class="menu-desc">1 shot espresso, two shots hot water.</p>
         </div>
         <div class="menu-section">
-            <h2 class="menu-section-title">COFFEE</h2>
-            <h4 class="menu-prices"><span>Small: $2</span> <span>Large: $4</span></h4>
-            <h4 class="menu-item">HOUSE BLEND</h4>
-            <p class="menu-desc">Smoky, strong, and assertive, just like us.</p>
+            <h2 id="tea" class="menu-section-title"><a href="#tea">TEA</a></h2>
+            <h4 class="menu-prices"><span>Per Cup: $2</span></h4>
+            <h4 class="menu-item">EARL GREY</h4>
+            <p class="menu-desc">Black tea fragranced with bergamot.</p>
+            <h4 class="menu-item">GINGER HIBISCUS</h4>
+            <p class="menu-desc">Floral, tart, and spicy. Caffeine free.</p>
+            <h4 class="menu-item">CASCADE GREEN</h4>
+            <p class="menu-desc">A blend of green teas hand selected by our master teamaker.</p>
+            <h4 class="menu-item">CHAMOMILE</h4>
+            <p class="menu-desc">Soothing and slightly sweet. Try it with honey! Caffeine free.</p>
         </div>
         <div class="menu-section">
-            <h2 class="menu-section-title">COFFEE</h2>
-            <h4 class="menu-prices"><span>Small: $2</span> <span>Large: $4</span></h4>
-            <h4 class="menu-item">HOUSE BLEND</h4>
-            <p class="menu-desc">Smoky, strong, and assertive, just like us.</p>
-        </div>
-        <div class="menu-section">
-            <h2 class="menu-section-title">COFFEE</h2>
-            <h4 class="menu-prices"><span>Small: $2</span> <span>Large: $4</span></h4>
-            <h4 class="menu-item">HOUSE BLEND</h4>
-            <p class="menu-desc">Smoky, strong, and assertive, just like us.</p>
-        </div>
-        <div class="menu-section">
-            <h2 class="menu-section-title">COFFEE</h2>
-            <h4 class="menu-prices"><span>Small: $2</span> <span>Large: $4</span></h4>
-            <h4 class="menu-item">HOUSE BLEND</h4>
-            <p class="menu-desc">Smoky, strong, and assertive, just like us.</p>
+            <h2 id="bakery" class="menu-section-title"><a href="#bakery">FROM THE BAKERY</a></h2>
+            <h4 class="menu-prices"><span>Cookies: $2</span> <span>Muffins & Pastries: $3</span></h4>
+            <h4 class="menu-item">MALLORY'S FAMOUS SNICKERDOODLES</h4>
+            <p class="menu-desc">Creamy cinnamony goodness made from scratch with our founder Mallory's prizewinning recipe.</p>
+            <h4 class="menu-item">OATMEAL COOKIE</h4>
+            <p class="menu-desc">Packed with rolled oats, raisins, and cranberries, these monster cookies are (almost) good for ya!</p>
+            <h4 class="menu-item">MIXED BERRY MUFFINS</h4>
+            <p class="menu-desc">Filled with the best berries of the season and topped with a crumb crust.</p>
+            <h4 class="menu-item">CROISSANT</h4>
+            <p class="menu-desc">Our oversized croissants are buttery, flaky, and usually all sold out by 7 a.m.</p>
         </div>
 	</section>
 </body>
